@@ -44,57 +44,171 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#aboutMe{
+#aboutMe {
   display: grid;
- grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
 }
-#about-img{
-width: 60%;
-height: 60%;
-margin: 20vh ;
+#about-img {
+  width: 60%;
+  height: 60%;
+  margin: 20vh;
 }
-#about-img>img{
+#about-img > img {
   width: 100%;
   height: 100%;
 }
-.aboutText{
- margin:30vh  5vh ;
+.aboutText {
+  margin: 30vh 5vh;
 }
-#skills{
+#skills {
   display: grid;
- grid-template-columns: 60% 40%;
+  grid-template-columns: 60% 40%;
 }
-#skills-list{
-  margin: 10vh 40vh;
+#skills-list {
+  margin: 10vh 10vh;
 }
-#skills-list> ul>li{
-list-style-type: none;
-font-size: 1.5em;
+#skills-list > ul > li {
+  list-style-type: none;
+  font-size: 1.5em;
 }
-#skills-icon{
-  margin: 20vh 2vh;
+#skills-icon {
+  margin: 20vh 40vh;
 }
-#skills-icon>h1,#skills-icon>h1>i,#project-text,.aboutText>h1,.aboutText>h3,#contact>h2,#contact>h1>a>i{
+#skills-icon > h1,
+#skills-icon > h1 > i,
+#project-text,
+.aboutText > h1,
+.aboutText > h3,
+#contact > h2,
+#contact > h1 > a > i {
   background: -webkit-linear-gradient(#eee, rgb(102, 6, 78));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#works{
- display:grid;
- grid-template-columns: auto auto auto;
- margin-left: 10%;
-} 
-#project-text{
- text-align: center;
- padding-bottom: 2vh;
+#works {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 10%;
 }
-#contact{
+#project-text {
+  text-align: center;
+  padding-bottom: 2vh;
+}
+#contact {
   /* border: 2px solid white; */
- margin:0% 20% ;
-padding-top: 5%;
-padding-bottom: 5%;
-text-align: center;
+  margin: 0% 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
 }
-#contact>h1>i{
+#contact > h1 > i {
   padding: 7vh;
+}
+.btn {
+  background: -webkit-linear-gradient(rgb(189, 112, 189), rgb(102, 6, 78));
+  font-weight: bold;
+}
+
+@media (max-width: 575.98px) {
+  #name {
+    display: none;
+  }
+
+  #header-intro {
+    margin: 20vh 1vh;
+  }
+  #header-intro > h1 {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+  #header-intro > h6 {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+  #works {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #skills {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #skills-list {
+    margin: 2rem;
+  }
+  #skills-list > ul > li {
+    list-style-type: none;
+    font-size: 1.5em;
+  }
+  #skills-icon {
+    margin: 2vh;
+  }
+  #aboutMe {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #about-img {
+    margin: 3rem;
+  }
+  .aboutText {
+    margin: 1rem;
+  }
+  .aboutText > p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-device-width: 575.98px) and (max-device-width: 1359px) {
+  #name {
+    display: none;
+  }
+
+  #header-intro {
+    margin: 20vh 1vh;
+  }
+  #header-intro > h1 {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+  #header-intro > h6 {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+  #works {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #skills {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #skills-list {
+    margin: 2rem;
+  }
+  #skills-list > ul > li {
+    list-style-type: none;
+    font-size: 1.5em;
+  }
+  #skills-icon {
+    margin: 2vh;
+  }
+  #aboutMe {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #about-img {
+    margin: 3rem;
+  }
+  .aboutText {
+    margin: 1rem;
+  }
+
+  .aboutText > p {
+    font-size: 14px;
+  }
+  #contact {
+    margin: 0% 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
 }

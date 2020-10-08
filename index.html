@@ -14,25 +14,36 @@
 
 <body>
   <header class="navigation">
-    <nav>
-      <h3 id="name">I'M MONIKA</h3>
-      <ul id="nav-lists" class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" href="#name">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutMe">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vQ6UsUFXGNRwtCec3AelH59fAom77hoEvU8pcWYmbRZukKeH_xGKyrP9ht2DwBqrAR2WlliJJdmvd1D/pub" target="_blank">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-light" id="navigation">
+      <a class="navbar-brand" href="#name" id="name"> I'M MONIKA</a>
+
+      <div class="collapse navbar-collapse ml-5" id="myLink">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item pl-5">
+            <a class="nav-link  text-white active" href="#name">Home</a>
+          </li>
+          <li class="nav-item pl-5">
+            <a class="nav-link  text-white" href="#about">About Us</a>
+          </li>
+          <li class="nav-item pl-5">
+            <a class="nav-link text-white" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item pl-5">
+            <a class="nav-link text-white"
+              href="https://drive.google.com/file/d/1d8xTizWO-CCF_wm-5b2bn5KDVVDijTT2/view?usp=sharing"
+              target="_blank">Resume</a>
+          </li>
+          <li class="nav-item pl-5">
+            <a class="nav-link  text-white" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myLink"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-white"></span>
+      </button>
     </nav>
     <div id="header-intro">
       <h6>ABOUT ME AS A</h6>
@@ -42,7 +53,7 @@
   <section>
     <div id="aboutMe">
       <div id="about-img">
-        <img src="" alt="monika">
+        <img src="monika.jpg" alt="monika">
       </div>
       <div class="aboutText">
         <h3>Hello</h3>
@@ -54,6 +65,10 @@
   </section>
   <section>
     <div id="skills">
+      <div id="skills-icon">
+        <h1><i class="fa fa-code" aria-hidden="true"></i>
+          Skills</i></h1>
+      </div>
       <div id="skills-list">
         <ul>
           <li>HTML5</li>
@@ -62,61 +77,94 @@
           <li>Sass</li>
           <li>Bootstrap4</li>
           <li>Javascript</li>
+          <li>Flutter</li>
+          <li>Reactjs</li>
           <li>Java</li>
+          <li>SQL</li>
         </ul>
       </div>
-      <div id="skills-icon">
-        <h1><i class="fa fa-code" aria-hidden="true"></i>
-          Skills</i></h1>
-      </div>
+
   </section>
   <section>
     <h1 id="project-text">Projects</h1>
-      <div id="works">
-        <div  class="card m-2" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">News Aggregrator</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="https://github.com/Monika123-pawar/news-aggregator-app" class="btn btn-primary">View On Github</a>
-          </div>
-        </div>
+    <div id="works">
 
-        <div class="card m-2" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Zomato Replica</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="https://github.com/Monika123-pawar/zomato-replica" class="btn btn-primary">View On Github</a>
-          </div>
-        </div>
+      <div class="card m-2" style="width: 18rem;">
 
-        <div class="card m-2" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Ark Studio</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="https://github.com/Monika123-pawar/Responsive-ark" class="btn btn-primary">View On Github</a>
-          </div>
+        <div class="card-body">
+          <h5 class="card-title">Ark Studio</h5>
+          <p class="card-text">This project is Ark Studio website.I used html, css</p>
+          <a href="https://github.com/Monika123-pawar/Responsive-ark" class="btn btn-primary">View On Github</a>
         </div>
       </div>
+
+      <div class="card m-2" style="width: 18rem;">
+
+        <div class="card-body">
+          <h5 class="card-title">Zomato Replica</h5>
+          <p class="card-text">This project is replica of zomato app.I used Bootstrap, css, html</p>
+          <a href="https://github.com/Monika123-pawar/zomato-replica" class="btn btn-primary">View On Github</a>
+        </div>
+      </div>
+
+
+      <div class="card m-2" style="width: 18rem;">
+
+        <div class="card-body">
+          <h5 class="card-title">ScientificServices</h5>
+          <p class="card-text">This project is website for scientific services.I created this for internship task as a
+            interview.I used Javascript, Bootstrap, css, html</p>
+          <a href="https://github.com/Monika123-pawar/Scientific-Services" class="btn btn-primary">View On Github</a>
+        </div>
+      </div>
+
+      <div class="card m-2" style="width: 18rem;">
+
+        <div class="card-body">
+          <h5 class="card-title">News Aggregrator</h5>
+          <p class="card-text">This project is about fetching current news from news api and display in browser.I used
+            Javascript, sass, html</p>
+          <a href="https://github.com/Monika123-pawar/news-aggregator-app" class="btn btn-primary">View On Github</a>
+        </div>
+      </div>
+
+      <div class="card m-2" style="width: 18rem;">
+
+        <div class="card-body">
+          <h5 class="card-title">Financial portfolio</h5>
+          <p class="card-text">This project related to stock market portfolio.I used reactjs, css</p>
+          <a href="https://github.com/Monika123-pawar/financial-portfolio-tracker-app" class="btn btn-primary">View On
+            Github</a>
+        </div>
+      </div>
+
+      <div class="card m-2" style="width: 18rem;">
+
+        <div class="card-body">
+          <h5 class="card-title">Online Food Plaza</h5>
+          <p class="card-text">This project is online food ordering system.I used java, servlet, jsp.</p>
+          <a href="https://github.com/Monika123-pawar/Online-FoodPlaza" class="btn btn-primary">View On Github</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section>
     <div id="contact">
       <h6>Give me a call on </h6>
       <h2>+91 8308865953</h2>
-      <h6>or send me an email at</h>
-      <h2>pawarmonika575@gmail.com</h2>
-      <h6>Follow</h6>
-      <h1><a href="https://www.facebook.com/profile.php?id=100024288998514" target="_black"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/monika-pawar-621986188/"  target="_black"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-      <a href="https://github.com/Monika123-pawar"  target="_black"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <h2>+91 9921373581</h2>
+      <h6>or send me an email at</h2>
+        <h2>pawarmonika575@gmail.com</h2>
+        <h6>Follow</h6>
+        <h1><a href="https://www.facebook.com/profile.php?id=100024288998514" target="_black"><i
+              class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/monika-pawar-621986188/" target="_black"><i class="fa fa-linkedin"
+              aria-hidden="true"></i></a>
+          <a href="https://github.com/Monika123-pawar" target="_black"><i class="fa fa-github"
+              aria-hidden="true"></i></a>
 
-      </h1>
+        </h1>
     </div>
   </section>
 
